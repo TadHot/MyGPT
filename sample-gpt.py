@@ -1,7 +1,9 @@
-from transformers import BertTokenizer
+from transformers import BertJapaneseTokenizer
 
 # トークナイザーの初期化
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+model_name = 'cl-tohoku/bert-base-japanese-whole-word-masking'
+tokenizer = BertJapaneseTokenizer.from_pretrained(model_name)
+#tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 # テキストのトークン化と数値化
 text = "私　は　猫　と　犬　が　好き　です。"
