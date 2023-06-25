@@ -4,7 +4,7 @@ from transformers import BertTokenizer
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 # テキストのトークン化と数値化
-text = "I love cats and two dogs."
+text = "I love cats and three dogs."
 tokens = tokenizer.tokenize(text)
 token_ids = tokenizer.convert_tokens_to_ids(tokens)
 
